@@ -15,10 +15,10 @@ public class CodeWordChecker implements StringChecker{
     public boolean isValid(String str){
         if(str.length()>=this.min && str.length()<=this.max){
             if(str.indexOf(this.not)>=0){
-                return true;
+                return false;
             }
             else{
-                return false;
+                return true;
             }
         }
         else{
